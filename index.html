@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Samantha's Crystal Game</title>
+        <!-- //link to CSS style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+        <!-- //link to CSS reset sheet -->
+    <link rel="stylesheet" href="assets/css/reset.css"> 
+        <!-- //link to Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- //Crystal Collector Jumbotron -->
+    <div class="container">
+        <div class="jumbotron" style="background-color: blue; color: white">
+            <div class="container">
+                <h1 class="text-center"><strong>Samantha's Crystal Collector!</strong></h1>
+            </div>
+        </div>
+
+        <!-- Row for main content -->
+        <row>
+            <!-- Container for Instructions -->
+            <div class="col-lg-12">
+                <div class="panel panel-primary" style="background-color: blue; color: white">
+                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                        <h3 class="panel-title text-center"><strong>Instructions: </strong></h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <ul>
+                            <li>You will be given a random number at the start of the game.</li> 
+                            <br>
+                            <li>There are four Crystals below. By clicking on a Crystal, you will add a specific  amount of points to your total  score.</li>
+                            <br>
+                            <li>You win the game by matching your total score to a random number,  you lose the game if your total score goes above the random number.</li>
+                            <br>
+                            <li>The value of each crystal is hidden from you until you click on it. Each time the game starts, the game will change the value of each crystal. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </row>
+
+        <!-- Row for game components -->
+        <row>
+            <!-- Win/Losses Panel -->
+            <div class="col-lg-2">
+                <div class="panel panel-primary" style="background-color: blue; color: white">
+                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                        <h3 class="panel-title text-center">Wins/Losses:</h3>
+                    </div>
+                    <div  class="panel-body text-center">Wins: <div id="winCount">0</div></div>
+                    <div  class="panel-body text-center">Losses: <div id="lossCount">0</div></div>
+                </div>
+            </div>
+
+            <!-- Target Score Panel -->
+            <div class="col-lg-2">
+                <div class="panel panel-primary" style="background-color: blue; color: white">
+                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                        <h3 class="panel-title text-center">Target Score:</h3>
+                    </div>
+                <div id="targetScore" class="panel-body text-center"></div>
+                </div>
+            </div>     
+
+            <!-- Crystal Panel -->
+            <div class="col-lg-6">
+                <div class="panel panel-primary" style="background-color: blue; color: white">
+                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                        <h3 class="panel-title text-center">Crystals:</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div class"gemStones">
+                           <a><img src="assets/images/gem.svg" alt=" " id="yellow" height="60px" width="60px"></a>
+                            <img src="assets/images/gems.svg" alt=" " id="blue" height="60px" width="60px">
+                            <img src="assets/images/gemstone.svg" alt=" " id="pink" height="60px" width="60px">
+                            <img src="assets/images/precious-stone.svg" alt=" " id="red" height="60px" width="60px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Score Panel -->
+            <div class="col-lg-2">
+                <div class="panel panel-primary" style="background-color: blue; color: white">
+                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                        <h3 class="panel-title text-center">Your Score:</h3>
+                    </div>
+                    <div id="yourScore" class="panel-body text-center"></div>
+                </div>
+            </div>
+        </row>
+    </div>
+       
+    <!-- footer row -->
+    <div class="container">
+        <row>
+            <div class="col-lg-12">
+                <div class="footer" style="background-color: blue; color: white">
+                    <footer>
+                        &copy; Copy written by Samantha Olvera
+                    </footer>
+                    <!-- how to add give credit to author?? -->
+                    <!-- <a href=www.freepik.com>Icons made by Freepik from www.flaticon.com</a> -->
+                </div> 
+            </div>
+        </row>
+    </div>
+
+    <!-- // link to JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- // link to game.js (Javascript) -->
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
