@@ -86,23 +86,10 @@ var addValues = function(clickedCrystals) {
   checkWin();
 }
 
-
-
-// console.log("crystal".length);
-// $("").on("click", function() {
-
-// When Your Score = Target Score, alert player wins
-
-// Win count increases, another random target score and crystal number is selected, your score resets
-
-// When Your Score > Target Score, alert player lost
-
-// Loss count increases, another random target score and crystal number is selected, your score resets
-
-// Main Process
-//calls the game to start
+//calls the start game functions
 startGame();
 
+//values added  to each crystal after each click
 $("#yellow").click(function() {
   addValues(yellowCrystal);
 });
