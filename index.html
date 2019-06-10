@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Samantha's Crystal Game</title>
-        <!-- //link to CSS style sheet -->
-    <link rel="stylesheet" href="assets/css/style.css"> 
-        <!-- //link to CSS reset sheet -->
-    <link rel="stylesheet" href="assets/css/reset.css"> 
+    <title>Crystal Game</title>
+        
         <!-- //link to Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- //link to CSS style sheet -->
+        <link rel="stylesheet" href="assets/css/style.css"> 
+        <!-- //link to CSS reset sheet -->
+        <link rel="stylesheet" href="assets/css/reset.css">         
 
 </head>
 <body>
     <!-- //Crystal Collector Jumbotron -->
     <div class="container">
-        <div class="jumbotron" style="background-color: blue; color: white">
+        <div class="jumbotron">
             <div class="container">
-                <h1 class="text-center"><strong>Samantha's Crystal Collector!</strong></h1>
+                <h1 class="text-center"><strong>Crystal Collector!</strong></h1>
             </div>
         </div>
 
@@ -27,8 +29,8 @@
         <row>
             <!-- Container for Instructions -->
             <div class="col-lg-12">
-                <div class="panel panel-primary" style="background-color: blue; color: white">
-                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
                         <h3 class="panel-title text-center"><strong>Instructions: </strong></h3>
                     </div>
                     <div class="panel-body text-center">
@@ -49,9 +51,9 @@
         <!-- Row for game components -->
         <row>
             <!-- Win/Losses Panel -->
-            <div class="col-lg-2">
+            <div class="col-xs-2 col-lg-2">
                 <div class="panel panel-primary" style="background-color: blue; color: white">
-                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                    <div class="panel-heading">
                         <h3 class="panel-title text-center">Wins/Losses:</h3>
                     </div>
                     <div  class="panel-body text-center">Wins: <div id="winCount">0</div></div>
@@ -60,9 +62,9 @@
             </div>
 
             <!-- Target Score Panel -->
-            <div class="col-lg-2">
+            <div class="col-xs-2 col-lg-2">
                 <div class="panel panel-primary" style="background-color: blue; color: white">
-                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                    <div class="panel-heading">
                         <h3 class="panel-title text-center">Target Score:</h3>
                     </div>
                 <div id="targetScore" class="panel-body text-center"></div>
@@ -70,13 +72,13 @@
             </div>     
 
             <!-- Crystal Panel -->
-            <div class="col-lg-6">
-                <div class="panel panel-primary" style="background-color: blue; color: white">
-                    <div class="panel-heading" style="background-color: darkblue; color: white">
+            <div class="col-xs-4 col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
                         <h3 class="panel-title text-center">Crystals:</h3>
                     </div>
                     <div class="panel-body text-center">
-                        <div class"gemStones">
+                        <div class="gemStones">
                            <a><img src="assets/images/gem.svg" alt=" " id="yellow" height="60px" width="60px"></a>
                             <img src="assets/images/gems.svg" alt=" " id="blue" height="60px" width="60px">
                             <img src="assets/images/gemstone.svg" alt=" " id="pink" height="60px" width="60px">
@@ -87,9 +89,9 @@
             </div>
 
             <!-- User Score Panel -->
-            <div class="col-lg-2">
+            <div class=" col-xs-2 col-lg-2">
                 <div class="panel panel-primary" style="background-color: blue; color: white">
-                    <div class="panel-heading" style="background-color: darkblue; color: white">
+                    <div class="panel-heading" >
                         <h3 class="panel-title text-center">Your Score:</h3>
                     </div>
                     <div id="yourScore" class="panel-body text-center"></div>
@@ -101,12 +103,12 @@
     <!-- footer row -->
     <div class="container">
         <row>
-            <div class="col-lg-12">
-                <div class="footer" style="background-color: blue; color: white">
+            <div class="col-xs-2 col-lg-3">
+                <div class="footer">
                     <footer>
                         &copy; Copy written by Samantha Olvera
                     </footer>
-                    <!-- how to add give credit to author?? -->
+                    <!-- Giving credit to author -->
                     <!-- <a href=www.freepik.com>Icons made by Freepik from www.flaticon.com</a> -->
                 </div> 
             </div>
