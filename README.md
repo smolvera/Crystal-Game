@@ -13,7 +13,7 @@ Check out the Deployed version: [Crystal Game](https://smolvera.github.io/Crysta
  - jQuery
  
 ### Further Development:
-- Change the layout to be more responsive
+- Style responsive layout 
 
 #### Contributing Team:
 
